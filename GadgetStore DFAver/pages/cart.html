@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ショッピングカート | Gadget Store</title>
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<h1 class="logo">Gadget Store</h1>
+				<nav>
+					<a href="../index.html">ホーム</a>
+					<a href="products.html">商品一覧</a>
+					<a href="cart.html">カート</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="cart-page">
+			<h2>SHOPPING CART</h2>
+			<p class="page-description">カートに入れた商品を確認できます。</p>
+
+			<div id="cart-items"></div>
+
+			<div id="cart-summary" class="cart-summary" hidden>
+				<p>合計金額</p>
+				<h3 id="cart-total">¥0</h3>
+				<a href="checkout.html" class="btn">購入手続きへ進む</a>
+			</div>
+
+			<p id="empty-cart" hidden>カートに商品がありません。</p>
+
+			<a href="products.html" class="continue-shopping">
+				← 買い物を続ける
+			</a>
+		</main>
+
+		<footer>
+			<p>&copy; 2026 MOCHI</p>
+		</footer>
+		<script src="../js/mode.js"></script>
+		<script src="../js/products.js"></script>
+		<script src="../js/cart.js"></script>
+	</body>
+</html>

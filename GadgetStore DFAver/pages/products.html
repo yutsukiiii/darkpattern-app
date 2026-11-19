@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>商品一覧 | Gadget Store</title>
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<h1 class="logo">Gadget Store</h1>
+				<nav>
+					<a href="../index.html">ホーム</a>
+					<a href="products.html">商品一覧</a>
+					<a href="cart.html">カート</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="products-page">
+			<h2>ALL PRODUCTS</h2>
+			<p class="page-description">お気に入りのガジェットを見つけよう。</p>
+
+			<div class="search-area">
+				<input
+					type="text"
+					id="search-input"
+					placeholder="商品名で検索"
+				/>
+				<button id="search-button">検索</button>
+			</div>
+
+			<div class="filter-area">
+				<button class="filter-btn active" data-category="all">
+					すべて
+				</button>
+				<button class="filter-btn" data-category="audio">
+					イヤホン
+				</button>
+				<button class="filter-btn" data-category="pc">
+					キーボード・マウス
+				</button>
+
+				<button class="filter-btn" data-category="accessory">
+					充電器
+				</button>
+			</div>
+
+			<p id="result-count"></p>
+
+			<div id="product-list" class="product-list"></div>
+
+			<p id="no-result" hidden>該当する商品がありません。</p>
+		</main>
+
+		<footer>
+			<p>© 2026 MOCHI</p>
+		</footer>
+
+		<script src="../js/products.js"></script>
+		<script src="../js/mode.js"></script>
+		<script src="../js/product-list.js"></script>
+	</body>
+</html>
